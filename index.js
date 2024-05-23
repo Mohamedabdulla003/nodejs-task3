@@ -3,10 +3,7 @@ const app = express();
 const { mongoose, } = require("./db");
 const  { MentorModel, StudentModel }   = require("./schema");
 const bodyparser = require("body-parser");
-const myprocess= require('dotenv').config()
 
- console.log(myprocess.parsed.MONGO_DB,"env");
- const mongoDB =process.env.MONGO_DB;
 
 app.use(bodyparser.json());
 
